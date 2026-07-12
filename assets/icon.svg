@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="RehabAI icon">
+  <defs>
+    <linearGradient id="g" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#0b1f33"/>
+      <stop offset="1" stop-color="#2f6f8f"/>
+    </linearGradient>
+  </defs>
+  <rect width="512" height="512" rx="128" fill="url(#g)"/>
+  <path d="M149 354V152h118c44 0 76 29 76 70 0 30-17 54-45 64l67 68h-68l-58-61h-35v61h-55Zm55-106h57c17 0 29-11 29-26s-12-25-29-25h-57v51Z" fill="#fff"/>
+  <circle cx="360" cy="153" r="28" fill="#b98a41"/>
+  <path d="M332 153h56M360 125v56" stroke="#fff" stroke-width="14" stroke-linecap="round"/>
+</svg>
