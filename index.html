@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#0b1f33" />
+    <meta name="description" content="Offline-first rehabilitation robotics and AI chatbot for rehabilitation technology, robotics, evidence, governance and deployment questions." />
+    <title>RehabAI Chatbot</title>
+    <link rel="manifest" href="manifest.webmanifest" />
+    <link rel="icon" href="assets/icon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="assets/styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#chat-input">Skip to chatbot</a>
+    <div class="app-shell">
+      <aside class="sidebar" aria-label="Application navigation">
+        <div class="brand-lockup">
+          <div class="brand-mark" aria-hidden="true">R</div>
+          <div>
+            <p class="eyebrow">Offline knowledge assistant</p>
+            <h1>RehabAI</h1>
+          </div>
+        </div>
+
+        <nav class="nav-stack" aria-label="Topic filters">
+          <button class="nav-item active" data-filter="all">All domains</button>
+          <button class="nav-item" data-filter="clinical">Clinical rehabilitation</button>
+          <button class="nav-item" data-filter="robotics">Robotics & devices</button>
+          <button class="nav-item" data-filter="ai">AI governance</button>
+          <button class="nav-item" data-filter="commercial">Evidence & adoption</button>
+        </nav>
+
+        <section class="source-panel" aria-labelledby="source-heading">
+          <p class="eyebrow">Research base</p>
+          <h2 id="source-heading">Curated sources</h2>
+          <ul id="source-list" class="source-list"></ul>
+        </section>
+      </aside>
+
+      <main class="main-panel">
+        <section class="hero" aria-labelledby="hero-heading">
+          <div class="hero-copy">
+            <p class="eyebrow">Rehabilitation • Robotics • AI • Evidence</p>
+            <h2 id="hero-heading">A consulting-grade chatbot for rehabilitation technology questions.</h2>
+            <p>
+              Ask about rehabilitation robotics, AI-enabled clinical support, home recovery, payer evidence,
+              regulatory pathways, safety governance and market adoption. Runs fully offline after first load.
+            </p>
+          </div>
+          <div class="hero-card" aria-label="System status">
+            <span class="status-dot" aria-hidden="true"></span>
+            <div>
+              <strong>Offline-first mode</strong>
+              <p>No external API. No patient data leaves this browser.</p>
+            </div>
+          </div>
+        </section>
+
+        <section class="insight-grid" aria-label="Strategic lenses">
+          <article class="metric-card">
+            <span>Demand</span>
+            <strong>2.4B+</strong>
+            <p>People globally live with a health condition that may benefit from rehabilitation.</p>
+          </article>
+          <article class="metric-card">
+            <span>Technology</span>
+            <strong>Robotics + AI</strong>
+            <p>Most value appears when devices, clinician judgement and evidence operate as one loop.</p>
+          </article>
+          <article class="metric-card">
+            <span>Governance</span>
+            <strong>Human oversight</strong>
+            <p>AI-enabled care needs audit trails, change control and clear clinical accountability.</p>
+          </article>
+        </section>
+
+        <section class="chat-layout" aria-label="Chatbot workspace">
+          <div class="chat-card">
+            <div class="chat-toolbar">
+              <div>
+                <p class="eyebrow">Ask RehabAI</p>
+                <h2>Knowledge assistant</h2>
+              </div>
+              <div class="toolbar-actions">
+                <button id="copy-last" class="ghost-button" type="button">Copy last</button>
+                <button id="clear-chat" class="ghost-button" type="button">Reset</button>
+              </div>
+            </div>
+
+            <div id="messages" class="messages" aria-live="polite"></div>
+
+            <form id="chat-form" class="chat-form">
+              <label class="sr-only" for="chat-input">Ask a question</label>
+              <textarea id="chat-input" rows="3" placeholder="Ask, for example: How should a hospital evaluate a rehabilitation robot?" required></textarea>
+              <button type="submit">Ask</button>
+            </form>
+          </div>
+
+          <aside class="prompt-card" aria-labelledby="prompt-heading">
+            <p class="eyebrow">Boardroom prompts</p>
+            <h2 id="prompt-heading">Start with a sharper question</h2>
+            <div id="prompt-list" class="prompt-list"></div>
+            <div class="disclaimer">
+              <strong>Clinical safety note</strong>
+              <p>RehabAI is educational only. It does not diagnose, prescribe, or replace clinicians.</p>
+            </div>
+          </aside>
+        </section>
+      </main>
+    </div>
+
+    <script src="assets/knowledge.js"></script>
+    <script src="assets/app.js"></script>
+  </body>
+</html>
