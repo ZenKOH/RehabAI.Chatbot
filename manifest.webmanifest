@@ -1,0 +1,16 @@
+{
+  "name": "RehabAI Chatbot",
+  "short_name": "RehabAI",
+  "description": "Offline-first rehabilitation robotics and AI knowledge assistant.",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#f7f9fb",
+  "theme_color": "#0b1f33",
+  "icons": [
+    {
+      "src": "assets/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
+}
