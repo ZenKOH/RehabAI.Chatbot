@@ -1,0 +1,21 @@
+{
+  "name": "rehabai-chatbot",
+  "version": "1.0.0",
+  "description": "Offline-first rehabilitation robotics and AI chatbot with a consulting-grade interface.",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "test": "node scripts/smoke-test.mjs",
+    "start": "python3 -m http.server 4173"
+  },
+  "keywords": [
+    "rehabilitation",
+    "robotics",
+    "ai",
+    "chatbot",
+    "pwa",
+    "healthtech"
+  ],
+  "license": "UNLICENSED"
+}
